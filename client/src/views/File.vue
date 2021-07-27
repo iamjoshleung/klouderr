@@ -36,7 +36,7 @@
         <!-- <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="6511749031"></Adsense>  -->
     </div> 
 
-    <div class="text-center" v-show="showDownloadButtons">
+    <div class="text-center mt-4" v-show="showDownloadButtons">
         <a
         :href="`${file.url_s3}`"
         class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
@@ -55,7 +55,7 @@
       >{{ $t("file.downloadFile", { num: '2' }) }}</a> -->
     </div>
 
-    <div class="ads text-center">
+    <div class="ads text-center mt-4">
         <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="6511749031"></Adsense>
     </div>
 
