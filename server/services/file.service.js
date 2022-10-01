@@ -6,15 +6,7 @@ const debug = require('debug')('app:file.service');
 const logger = require('../services/logger.service');
 const boom = require('boom');
 const _ = require('lodash');
-const moment = require('moment');
-const path = require('path');
-const aws = require('aws-sdk');
-const {
-  removeObjects,
-  getCFPresignedUrl,
-  getS3PresignedUrl,
-  s3,
-} = require('./aws.service');
+const { removeObjects, getS3PresignedUrl, s3 } = require('./aws.service');
 
 const fileConfig = require('../config/file.config');
 
@@ -132,7 +124,7 @@ module.exports = {
       storage: multerS3({
         s3: s3,
         bucket: fileConfig.AWSBucket,
-        acl: 'public-read',
+        acl: 'private',
         key: function (req, file, cb) {
           logger.info(file);
           cb(null, `${Date.now().toString()}-${file.originalname}`);
