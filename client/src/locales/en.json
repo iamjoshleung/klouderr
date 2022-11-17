@@ -2,13 +2,13 @@
   "site": {
     "name": "Klouderr",
     "desc": "A small free cloud service."
-},
+  },
   "file": {
     "type": "type",
     "size": "size",
     "downloaded": "downloaded",
     "visited": "visited",
-    "downloadFile": "Download Link {num}"
+    "downloadFile": "Download Link"
   },
   "upload-files": "Upload files",
   "upload": {

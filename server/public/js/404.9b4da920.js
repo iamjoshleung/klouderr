@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["404"],{9703:function(t,s,n){"use strict";n.r(s);var i=function(){var t=this,s=t._self._c;return s("div",[s("p",{staticClass:"title is-1 text-red"},[t._v("404")]),s("p",{staticClass:"subtitle is-3"},[t._v(t._s(t.$t("not-found")))])])},e=[],l=n("0c7c"),c={},u=Object(l["a"])(c,i,e,!1,null,null,null);s["default"]=u.exports}}]);
+//# sourceMappingURL=404.9b4da920.js.map

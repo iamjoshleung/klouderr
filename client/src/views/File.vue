@@ -36,7 +36,7 @@
         <!-- <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="6511749031"></Adsense>  -->
     </div> 
 
-    <div class="text-center mt-4" v-show="showDownloadButtons">
+    <div class="text-center mt-6">
         <a
         :href="`${file.url_s3}`"
         class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
@@ -44,23 +44,15 @@
         target="_blank"
         @click="onFileDownload"
         :disabled="downloaded"
-      >{{ $t("file.downloadFile", { num: '1' }) }}</a>
-        <!-- <a
-        :href="`${file.url_s3}`"
-        class="button is-rounded is-white uppercase font-bold"
-        :class="{ 'pointer-events-none': downloaded }"
-        target="_blank"
-        @click="onFileDownload"
-        :disabled="downloaded"
-      >{{ $t("file.downloadFile", { num: '2' }) }}</a> -->
+      >{{ $t("file.downloadFile") }}</a>
     </div>
 
-    <div class="ads text-center mt-4">
+    <div class="ads text-center mt-6">
         <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="6511749031"></Adsense>
     </div>
 
-  <!-- <div class="mt-20" v-if="$i18n.locale === 'en'"> -->
-    <!-- <div class="mt-20 mb-20">
+  <div class="mt-20" v-if="$i18n.locale === 'en'"> -->
+    <div class="mt-20 mb-20">
         <h4 class="title title--no-sp is-6">Worldwide IaaS Public Cloud Services Market Jumped 37.3% in 2019</h4>
 
         <p>
@@ -79,8 +71,8 @@ Amazon continued to lead the worldwide IaaS market with an estimated $20 billion
 Microsoft remained in the No. 2 position in the IaaS market with more than half of its nearly $8 billion in revenue coming from North America. Microsoft’s IaaS offering grew 57.8% in 2019 as the company leveraged its sales reach and ability to co-sell its Azure offerings with other Microsoft products and services in order to drive adoption.
 
 The dominant IaaS provider in China, Alibaba Cloud, grew 62.4% in 2019 with revenue surpassing $4 billion, up from $2.5 billion in 2018. Alibaba Group will continue to expand its cloud infrastructure business in the coming years and aim to offer cloud-based intelligent solutions to its customers to support their digital transformation process.
-        </p>
-    </div> -->
+        </p> 
+    </div>
 
 
     <!-- <div class="mt-20" v-else>
@@ -139,7 +131,6 @@ export default {
     file: null,
     title: '',
     downloaded: false,
-    showDownloadButtons: false,
   }),
   filters: {
     humanBytes(val) {
@@ -155,10 +146,6 @@ export default {
         this.file = file;
         this.file.visitCount += 1;
         this.title = `${file.name} - `;
-
-        setTimeout(() => {
-          this.showDownloadButtons = true;
-        }, 2000);
       })
       .catch((err) => {
         console.log(err);
