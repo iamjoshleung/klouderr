@@ -35,7 +35,7 @@
       <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="9178412838"></Adsense>
     </div>
 
-    <div class="text-center mt-12 mb-12">
+    <div class="text-center mt-12">
       <a
         :href="`${file.url_s3}`"
         class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
@@ -47,7 +47,7 @@
       >
     </div>
 
-    <div class="ads text-center mt-8">
+    <div class="ads text-center">
       <Adsense data-ad-client="ca-pub-4679085340013866" data-ad-slot="6511749031"></Adsense>
     </div>
 
