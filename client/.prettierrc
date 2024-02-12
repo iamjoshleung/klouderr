@@ -1,0 +1,5 @@
+{
+  "singleQuote": true,
+  "operator-linebreak": "off",
+  "printWidth": 80
+}

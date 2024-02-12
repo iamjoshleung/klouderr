@@ -15,7 +15,8 @@
       <div class="upload-area">
         <p class="block">{{ $t('upload.drop-here') }}</p>
         <button class="button is-primary is-rounded is-large">
-          {{ $t("upload.selectFiles") }}</button>
+          {{ $t('upload.selectFiles') }}
+        </button>
       </div>
     </file-upload>
     <p class="text-red mt-2">{{ this.error }}</p>
@@ -28,10 +29,14 @@
             <button class="delete" type="button" @click.prevent="remove(file)"></button>
           </div>
           <div>
-            <progress v-if="file.active || file.progress !== '0.00'"
-            class="progress is-small is-primary"
-            :value="Math.round(file.progress)"
-            max="100">{{ file.progress }}%</progress>
+            <progress
+              v-if="file.active || file.progress !== '0.00'"
+              class="progress is-small is-primary"
+              :value="Math.round(file.progress)"
+              max="100"
+            >
+              {{ file.progress }}%
+            </progress>
           </div>
         </li>
       </ul>
@@ -39,7 +44,8 @@
         class="button is-rounded mt-5"
         v-if="!$refs.upload || !$refs.upload.active"
         @click.prevent="$refs.upload.active = true"
-      >{{ $t('upload.start-uploading') }}</a>
+        >{{ $t('upload.start-uploading') }}</a
+      >
     </div>
   </div>
 </template>
@@ -55,7 +61,7 @@ export default {
     putAction: '/api/upload',
     error: '',
     maximum: 5,
-    size: 1024 * 1024 * 150,
+    size: 1024 * 1024 * 200,
     allowedExtentions:
       'image/*,video/*,application/pdf,application/zip,application/x-rar-compressed,application/x-bittorrent',
   }),
@@ -86,12 +92,7 @@ export default {
       this.error = '';
 
       // show error msg when maximum files exceeded.
-      if (
-        this.maximum !== 0
-        && this.files.length >= this.maximum
-        && newFile
-        && !oldFile
-      ) {
+      if (this.maximum !== 0 && this.files.length >= this.maximum && newFile && !oldFile) {
         this.error = `You can only upload ${this.maximum} at a time。`;
         return prevent();
       }
@@ -99,17 +100,13 @@ export default {
       if (newFile && !oldFile) {
         // Add file
 
-        if (
-          !/\.(jpeg|jpg|gif|png|webp|pdf|torrent|zip|rar|mp4)$/i.test(
-            newFile.name,
-          )
-        ) {
+        if (!/\.(jpeg|jpg|gif|png|webp|pdf|torrent|zip|rar|mp4)$/i.test(newFile.name)) {
           this.error = `You can't upload ${newFile.name}。`;
           return prevent();
         }
 
         if (newFile.size > this.size) {
-          this.error = 'File exceeds the maximum size of 150MB';
+          this.error = 'File exceeds the maximum size of 200MB';
           return prevent();
         }
       }

@@ -60,6 +60,7 @@ module.exports = {
   },
 
   async uploadFile(req, res, next) {
+    console.log('here1');
     const file = req.files[0];
 
     let fileModel = new File({
@@ -74,7 +75,9 @@ module.exports = {
     fileModel.encodedName = btoa(fileModel._id);
     fileModel.removeCode = btoa(fileModel._id + '-remove');
 
+    console.log('here2');
     await fileModel.save();
+    console.log('here3');
 
     res.status(201).json({
       status: 'success',
@@ -131,7 +134,7 @@ module.exports = {
         },
       }),
       limits: {
-        fileSize: 1024 * 1024 * 150, //50mb
+        fileSize: 1024 * 1024 * 200, //50mb
       },
     };
   },
