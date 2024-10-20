@@ -75,9 +75,7 @@ module.exports = {
     fileModel.encodedName = btoa(fileModel._id);
     fileModel.removeCode = btoa(fileModel._id + '-remove');
 
-    console.log('here2');
     await fileModel.save();
-    console.log('here3');
 
     res.status(201).json({
       status: 'success',
