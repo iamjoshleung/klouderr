@@ -67,7 +67,7 @@
     <div class="mt-20" v-if="$i18n.locale === 'en'">
       <div class="mt-20 mb-20">
         <h4 class="title title--no-sp is-6">
-          Worldwide IaaS Public Cloud Services Market Jumped 37.3% in 2019
+          Worldwide IaaS Public Cloud Services Market Jumped 37.3% in 2024
         </h4>
 
         <p>
