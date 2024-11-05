@@ -60,200 +60,153 @@
     <div class="mt-20" v-if="$i18n.locale === 'en'">
       <div class="mt-20 mb-20">
         <h4 class="title title--no-sp is-6">
-          Microsoft and A16Z set aside differences, join hands in plea against
-          AI regulation
+          How I Pick My Stocks: Investing For Beginners
         </h4>
 
         <p>
-          Two of the biggest forces in two deeply intertwined tech ecosystems —
-          large incumbents and startups — have taken a break from counting their
-          money to jointly plead that the government cease and desist from even
-          pondering regulations that might affect their financial interests, or
-          as they like to call it, innovation. “Our two companies might not
-          agree on everything, but this is not about our differences,” writes
-          this group of vastly disparate perspectives and interests: Founding
-          A16Z partners Marc Andreessen and Ben Horowitz, and Microsoft CEO
-          Satya Nadella and President/Chief Legal Officer Brad Smith. A truly
-          intersectional assemblage, representing both big business and big
-          money. But it’s the little guys they’re supposedly looking out for.
-          That is, all the companies that would have been affected by the latest
-          attempt at regulatory overreach: SB 1047. Imagine being charged for
-          improper open model disclosure! A16Z general partner Anjney Midha
-          called it a “regressive tax” on startups and “blatant regulatory
-          capture” by the Big Tech companies that could, unlike Midha and his
-          impoverished colleagues, afford the lawyers necessary to comply.
-          Except that was all disinformation promulgated by Andreessen Horowitz
-          and the other moneyed interests that might actually have been affected
-          as backers of billion-dollar enterprises. In fact, small models and
-          startups would have been only trivially affected because the proposed
-          law specifically protected them. It’s odd that the very type of
-          purposeful cutout for “Little Tech” that Horowitz and Andreessen
-          routinely champion was distorted and minimized by the lobbying
-          campaign they and others ran against SB 1047. (The architect of that
-          bill, California State Senator Scott Wiener, talked about this whole
-          thing recently at Disrupt.) That bill had its problems, but its
-          opposition vastly overstated the cost of compliance and failed to
-          meaningfully support claims that it would chill or burden startups.
-          It’s part of the established playbook that Big Tech — which, despite
-          their posturing, Andreessen and Horowitz are closely aligned with —
-          runs at the state level, where it can win (as with SB 1047), meanwhile
-          asking for federal solutions that it knows will never come, or which
-          will have no teeth due to partisan bickering and congressional
-          ineptitude on technical issues. This joint statement of “policy
-          opportunity” is the latter part of the play: after torpedoing SB 1047,
-          they can say they only did so with an eye to supporting a federal
-          policy. No matter that we are still waiting on the federal privacy law
-          that tech companies have pushed for a decade while fighting state
-          bills. And what policies do they support? “A variety of responsible
-          market-based approaches,” in other words: hands off our money, Uncle
-          Sam. Regulations should have “a science and standards-based approach
-          that recognizes regulatory frameworks that focus on the application
-          and misuse of technology,” and should “focus on the risk of bad actors
-          misusing AI.” What is meant by this is we shouldn’t have proactive
-          regulation, but instead reactive punishments when unregulated products
-          are used by criminals for criminal purposes. This approach worked
-          great for that whole FTX situation, so I can see why they espouse it.
-          “Regulation should be implemented only if its benefits outweigh its
-          costs.” It would take thousands of words to unpack all the ways this
-          idea, expressed so, in this context, is hilarious. But basically, what
-          they are suggesting is that the fox be brought in on the henhouse
-          planning committee. Regulators should “permit developers and startups
-          the flexibility to choose which AI models to use wherever they are
-          building solutions and not tilt the playing field to advantage any one
-          platform.” The implication is that there is some sort of plan to
-          require permission to use one model or another. Since that’s not the
-          case, this is a straw man. Here’s a big one that I have to just quote
-          in its entirety: The right to learn: copyright law is designed to
-          promote the progress of science and useful arts by extending
-          protections to publishers and authors to encourage them to bring new
-          works and knowledge to the public, but not at the expense of the
-          public’s right to learn from these works. Copyright law should not be
-          co-opted to imply that machines should be prevented from using data —
-          the foundation of AI — to learn in the same way as people. Knowledge
-          and unprotected facts, regardless of whether contained in protected
-          subject matter, should remain free and accessible. To be clear, the
-          explicit assertion here is that software, run by billion dollar
-          corporations, has the “right” to access any data because it should be
-          able to learn from it “in the same way as people.” First off, no.
-          These systems are not like people; they produce data that mimics human
-          output in their training data. They are complex statistical projection
-          software with a natural language interface. They have no more “right”
-          to any document or fact than Excel. Second, this idea that “facts” —
-          by which they mean “intellectual property” — are the only thing these
-          systems are interested in and that some kind of fact-hoarding cabal is
-          working to prevent them is an engineered narrative we have seen
-          before. Perplexity has invoked the “facts belong to everyone” argument
-          in its public response to being sued for alleged systematic content
-          theft, and its CEO Aravind Srinivas repeated the fallacy to me on
-          stage at Disrupt, as if they are being sued over knowing trivia like
-          the distance from the Earth to the Moon. While this is not the place
-          to embark on a full accounting of this particular straw man argument,
-          let me simply point out that while facts are indeed free agents, the
-          way they are created — say, through original reporting and scientific
-          research — involves real costs. That is why the copyright and patent
-          systems exist: not to prevent intellectual property from being shared
-          and used widely, but to incentivize its creation by ensuring that they
-          can be assigned real value. Copyright law is far from perfect and is
-          probably abused as much as it is used. But it is not being “co-opted
-          to imply that machines should be prevented from using data” — it is
-          being applied to ensure that bad actors do not circumvent the systems
-          of value that we have built around intellectual property. That is
-          quite clearly the ask: let the systems we own and run and profit from
-          freely use the valuable output of others without compensation. To be
-          fair, that part is “in the same way as humans,” because it is humans
-          who design, direct, and deploy these systems, and those humans don’t
-          want to pay for anything they don’t have to, and don’t want
-          regulations to change that. There are plenty of other recommendations
-          in this little policy document, which are no doubt given greater
-          detail in the versions they’ve sent directly to lawmakers and
-          regulators through official lobbying channels. Some ideas are
-          undoubtedly good, if also a little self-serving: “fund digital
-          literacy programs that help people understand how to use AI tools to
-          create and access information.” Good! Of course, the authors are
-          heavily invested in those tools. Support “Open Data Commons—pools of
-          accessible data that would be managed in the public’s interest.”
-          Great! “Examine its procurement practices to enable more startups to
-          sell technology to the government.” Awesome! But these more general,
-          positive recommendations are the kind of thing you see every year from
-          industry: invest in public resources and speed up government
-          processes. These palatable but inconsequential suggestions are just a
-          vehicle for the more important ones that I outlined above. Ben
-          Horowitz, Brad Smith, Marc Andreessen, and Satya Nadella want the
-          government to back off regulating this lucrative new development, let
-          industry decide what regulations are worth the trade-off, and nullify
-          copyright in a way that more or less acts as a general pardon for
-          illegal or unethical practices that many suspect enabled the rapid
-          rise of AI. Those are the policies that matter to them, whether kids
-          get digital literacy or not. SpaceX will attempt to transfer
-          propellant from one orbiting Starship to another as early as next
-          March, a technical milestone that will pave the way for an uncrewed
-          landing demonstration of a Starship on the moon, a NASA official said
-          this week. Much has been made of Starship’s potential to transform the
-          commercial space industry, but NASA is also hanging its hopes that the
-          vehicle will return humans to the moon under the Artemis program. The
-          space agency awarded the company a $4.05 billion contract for two
-          human-rated Starship vehicles, with the upper stage (also called
-          Starship) landing astronauts on the surface of the moon for the first
-          time since the Apollo era. The crewed landing is currently scheduled
-          for September 2026. Kent Chojnacki, deputy manager of NASA’s Human
-          Landing System program, provided more detail on exactly how the agency
-          is working with the space company as it looks toward that critical
-          mission in an interview with Spaceflight Now. It will come as no
-          surprise that NASA is paying close attention to Starship’s test
-          campaign, which has notched five launches so far. SpaceX made history
-          during the most recent test on October 13 when it caught the Super
-          Heavy rocket booster mid-air using “chopsticks” attached to the launch
-          tower for the first time. “We learn a lot each time [a launch]
-          happens,” Chojnacki said. Chojnacki’s work history includes numerous
-          roles in the Space Launch System program, which oversees the
-          development of a massive rocket of the same name that is being built
-          by a handful of traditional aerospace primes. The first SLS rocket
-          launched the Artemis I mission in December 2023, and future rockets
-          will launch the subsequent missions under the Artemis program. No part
-          of the rocket is reusable, however, so NASA is spending upwards of $2
-          billion on each launch vehicle. The first contracts for the SLS
-          program were awarded over a decade ago under what’s known as a
-          “cost-plus” model, which means that NASA pays a base amount plus
-          expenses. (This type of contract has been stringently criticized for
-          incentivizing long development timelines and high expenses.) In
-          contrast, HLS contracts are “fixed-price” — so SpaceX receives a
-          one-time $2.99 billion payment provided it meets certain milestones.
-          Chojnacki said NASA has taken very different approaches to the HLS
-          versus SLS program, even beyond the contracting model. “SLS was a very
-          traditional NASA program. NASA laid out a very strict set of
-          requirements and dictated propellant inventory, dictated all the
-          things to the various elements. They flowed down. They were cost-plus
-          programs where the aerospace companies would respond, and we would
-          work in a very traditional manner,” he said. “Moving to HLS, we’re
-          doing a lot of moving parts at one time. On SpaceX’s contract right
-          now, for their initial landing, there are 27 system requirements. 27,
-          and we kept it as loose as possible.” Under SpaceX’s contract, they
-          must meet mandatory design reviews, but SpaceX can also propose
-          additional milestones for payment. One requirement that SpaceX
-          requested is the ship-to-ship propellant transfer demonstration. Those
-          tests are set to begin around March 2025, with testing concluding in
-          the summer, Chojnacki said. “That would be the first time that’s
-          demonstrated on this scale, so that is a big building block. And once
-          you’ve done that, you’ve really cracked open the opportunity to move
-          massive amounts of payload and cargo outside of the Earth’s sphere. If
-          you can have a Starship with propellant aggregation, that’s going to
-          be the next step to doing an uncrewed demonstration.” In addition to
-          the testing, the next major review of Starship will be the Critical
-          Design Review (CDR) in Summer 2025, which is when NASA certifies that
-          the company met all 27 of those system requirements. Chojnacki said
-          NASA astronauts also meet with SpaceX once a month to provide input on
-          Starship’s interior. The company is building mockups of the crew
-          cabin, including the sleeping quarters and laboratory, at Boca Chica.
-          NASA anticipates getting a design update this month before looking at
-          it during the CDR next year. That isn’t the only place where NASA has
-          offered its input: it also offered input on some aspects of the rocket
-          design, like the vehicle’s cryogenic components, as well as conducting
-          some testing on the thermal tiles that help keep the cryogenic fuels
-          cold. If all goes to plan, SpaceX will land astronauts on the moon in
-          September 2026. “That is definitively the date we’re working towards.
-          We don’t have any known road blocks. We do have some first-time things
-          that have to be demonstrated, and we have a plan in place to go
-          demonstrate those.
+          This is the best piece of advice I've ever heard about investing. It
+          came from a millionaire I looked up to as a kid. After overhearing him
+          talk about investing, I wanted to get involved. But as a complete
+          beginner, I didn't know where to start. So I asked him, "How do I pick
+          the right stocks to invest in?" His answer was very simple. "Treat it
+          like finding a girlfriend." This is quite a clever way to look at it.
+          Because when you buy a share in a company, you actually become a part
+          owner. This is like a partnership between you and the company, and
+          just like a relationship, you want to make sure it's happy, long, and
+          successful. But look, I'm not gonna pretend that there's a crystal
+          ball that can tell you when to buy a stock before it rockets in value
+          like most of the fake gurus online. However, there are certainly a few
+          things you can do to tip the odds in your favor. When you're looking
+          for a partner, you need to have a strategy in mind. Are you gonna
+          shower them with gifts like a simp or treat them mean to keep them
+          keen? You'll get very different results depending on which strategy
+          you choose, and the same goes for stocks. So just like dating, you
+          need to figure out how you're gonna approach the stock market so that
+          you get the results you want. There are two strategies you can choose
+          from: the technical or the fundamental approach. Both of these options
+          are very different, so let's quickly go over what they involve.
+          Technical analysis is mainly for short-term day traders. They use
+          charts and price action to identify patterns that supposedly help them
+          predict if a stock is gonna go up or down in the short-term. I use the
+          word supposedly because, in my opinion, most of the people using this
+          strategy are glorified gamblers. Is it possible that they trade
+          successfully? Yes, but more than 95% of day traders lose money rather
+          than making it, according to The Motley Fool. Fundamental analysis is
+          like being a detective for a company. You look at everything, from
+          their financial reports to how well-known the brand is and who's
+          running the show. All these pieces of information help you understand
+          how the company is doing now and how it might perform in the future.
+          This approach can help you pick a range of stocks that can make you a
+          nice amount of money over a three to ten year period. I know saying
+          this will probably ruin my watch time, but I only want people getting
+          into this for the right reasons. So if you're looking for a way to get
+          rich quick, then stop watching my video now. My goal is to secure your
+          financial future, not just help you make a quick buck. Also, remember,
+          with any kind of investing, your money can go down as well as up. If
+          you're still with me, then comment down below, "I'm in," so I know how
+          many of you are willing to invest for the long-term. Right, all done?
+          Cool. Let's jump into it. When you're on a dating app and checking out
+          someone's profile, you usually look at their pictures and read their
+          bio to see if they'd make a good match. It's exactly the same when
+          you're thinking about investing in a company. You have to check out
+          the company's profile, which in this case is something called a
+          balance sheet. A balance sheet is a financial statement that provides
+          a snapshot of a company's financial position at a specific point in
+          time. It details the company's assets, liabilities, and shareholders'
+          equity. Don't worry if that sounds a bit confusing. We'll take a look
+          at one together, and I'll break it down with you. I'm gonna be using
+          Trading 212 to do this, which is a great place to research and buy
+          stocks. You're welcome to download it and follow along. Trading 212 is
+          also sponsoring this portion of the video, and if you use the code
+          TILBURY, you'll also get a free fractional share worth up to a hundred
+          pounds when you open your account. I'll put the link in the
+          description. Plus, you can get more free stocks by inviting your
+          friends. Both of you will get a free share as long as they fund their
+          account. I'm gonna be using their desktop website for this video, but
+          you can do all of this on the mobile app if you want to. For everyone
+          in the USA, you can find the same information on Yahoo Finance.
+          Remember that nothing in this video should be taken as financial
+          advice. I'm not a financial advisor, and when investing, your capital
+          is at risk. So to find the balance sheet, just head to the stock
+          you're interested in. For this example, I'm gonna pick Coca-Cola.
+          Scroll down the page, click on Financials, then Balance Sheet, and
+          More Financials. This pulls up a pretty complicated looking page, but
+          trust me, it is actually very simple. To help you understand this
+          balance sheet, think of it like a cookie jar. At the top, you've got
+          the current assets. These are like the cookies you can grab and eat.
+          For a company, this is the cash, or anything that can be turned into
+          cash within 12 months. Next, you have the longer-term assets. These
+          are like the cookies that are deeper down in a jar. For a company,
+          this often includes the headquarters and equipment. Here, you have the
+          intangible assets. These are like the invisible things that make the
+          cookies taste good. You can't touch these things, but they bring a lot
+          of value. For a company, this is patents, intellectual property,
+          trademarks, and goodwill. This next section is all about liabilities.
+          These are like the cookies that you've promised to your friends for
+          borrowing their ingredients. I'm most interested in the current
+          liabilities as these will need to be paid back within one year or a
+          normal operating cycle. So now you know what all of this information
+          means, what should you actually do with it? Well, there's a simple
+          calculation you can do to easily know if a company is high-risk or
+          not, and that is total current assets divided by total current
+          liabilities. A good rule of thumb is this number should be above one.
+          But how does this actually work in practice? Well, let's put
+          Coca-Cola's numbers in. Their total current assets are $26.73 billion.
+          So if we divide that by their total current liabilities, which are
+          $23.57 billion, that comes to approximately 1.13. This means the
+          company has $1.3 in current assets for every $1 in current
+          liabilities, indicating they have enough short-term assets to cover
+          their short-term debts. This is a great indicator, but our work is far
+          from over. When you're getting to know someone new, you're probably
+          curious about their past relationships. It's like doing a bit of a
+          background check, right? You might wonder whether they've ever cheated
+          or how many partners they've had. It's pretty much the same when
+          you're considering investing. Before you put your hard-earned cash
+          into a company, you wanna check out its track record. That's where the
+          income statement comes in. And unlike people, public companies have to
+          be upfront and honest about their past. An income statement is like a
+          report card for a company showing how well it did over a specific
+          period, like a month, a quarter, or a year. Put simply, it tells you
+          how much money the company made and how much it spent. This is
+          normally found in the same place as the balance sheet. If you're using
+          the Trading 212 app like me, then just click on the first tab, and
+          you'll see all the information. Here at the top, we have the total
+          revenue, which is the total the business took in the time period. As
+          we can see from Coca-Cola, they took in 45.75 billion in 2023, which
+          isn't too shabby. If we scroll down a bit, we get to the net income,
+          which is the money the company makes after all expenses have been
+          deducted. For Coca-Cola, this is $10.71 billion. So, why does this
+          matter? Well, every business has two main types of expenses: the cost
+          of revenue and the cost of operations. If either of these are too
+          high, then it could be a red flag. Just think about it. If you were
+          selling custom T-shirts, you'd have to spend money on fabric and
+          printing. This is your cost of revenue, as you can't create custom
+          T-shirts without these materials, so this is a necessary expense. But
+          that's not it. You'd also have to spend money on marketing and
+          potentially staff. These are known as your operating expenses. Once
+          you subtract both the cost of revenue and the operating expenses from
+          the total money you make from selling your custom T-shirts, you get
+          your operating income. Now, if you just scale up that example, it's
+          the same idea for big companies like Coca-Cola. See here, this is the
+          operating income. So now you know what all this information means,
+          what should you actually do with it? Well, here's a simple calculation
+          to see if a business is making a healthy amount of profit. Operating
+          income divided by total revenue times a hundred. According to Tide
+          Banking, as a rule of thumb, 5% is a low profit margin, 10% is a
+          healthy margin, and 20% is a high margin. If we plug Coca-Cola's
+          numbers into this calculation, we get approximately 25.73%, which is a
+          high profit margin. This is a great indicator to use. However, it's
+          important to remember that older, more established companies will be
+          more profitable than newer, faster-growing companies. So profitability
+          isn't the most important thing. I mean, Amazon took years to make a
+          profit, and look at them now. But saying this, you should also keep in
+          mind that a company that's done well in the past doesn't mean that
+          it'll continue to do well in the future. Past performance doesn't
+          guarantee future results. Listen, it might not sound like a romantic
+          thing to say, but if you're thinking of getting involved with someone,
+          you don't want them to be bad with money. It can lead to a whole load
+          of issues, and the same is true when it comes to investing in a
+          company.
         </p>
       </div>
     </div>
