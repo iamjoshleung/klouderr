@@ -38,6 +38,13 @@
       ></Adsense>
     </div>
 
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="6511749031"
+      ></Adsense>
+    </div>
+
     <div class="text-center">
       <a
         :href="`${file.url_s3}`"
@@ -48,13 +55,6 @@
         :disabled="downloaded"
         >{{ $t('file.downloadFile') }}</a
       >
-    </div>
-
-    <div class="ads text-center">
-      <Adsense
-        data-ad-client="ca-pub-4679085340013866"
-        data-ad-slot="6511749031"
-      ></Adsense>
     </div>
 
     <div class="mt-20" v-if="$i18n.locale === 'en'">
