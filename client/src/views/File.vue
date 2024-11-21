@@ -45,6 +45,13 @@
       ></Adsense>
     </div>
 
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="6511749031"
+      ></Adsense>
+    </div>
+
     <div class="text-center">
       <a
         :href="`${file.url_s3}`"
