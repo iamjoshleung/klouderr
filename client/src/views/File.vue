@@ -67,11 +67,11 @@
       </div>
     </div>
 
-    <div v-else>
+    <div v-else class="text-center">
       <!-- Adblocker warning -->
       <h1>
         Please disable your AdBlocker to view the content.
-        請關閉AdBlocker以瀏覽下載內容
+        請關閉AdBlocker以瀏覽下載鏈結
       </h1>
     </div>
 
@@ -249,13 +249,12 @@ export default {
     },
   },
   mounted() {
-    // Setup adblock detector
-    window.adblockDetector.init({
-      debug: false,
-      complete: (result) => {
-        this.adblockDetected = result;
-      },
-    });
+    setTimeout(() => {
+      const ad = document.querySelector('ins.adsbygoogle');
+      if (ad && ad.innerHTML.replace(/\s/g, '').length === 0) {
+        this.adblockDetected = true;
+      }
+    }, 1500);
 
     axios
       .get(`/api/files/${this.$route.params.id}`)
@@ -276,13 +275,6 @@ export default {
 
         return this.$router.push('/404');
       });
-
-    // setTimeout(() => {
-    //   const ad = document.querySelector('ins.adsbygoogle');
-    //   if (ad && ad.innerHTML.replace(/\s/g, '').length === 0) {
-    //     this.$router.push({ name: 'ad-blocker' });
-    //   }
-    // }, 1500);
   },
   methods: {
     onFileDownload() {
