@@ -52,7 +52,28 @@
       ></Adsense>
     </div>
 
-    <div class="text-center">
+    <div v-if="noAdblocker">
+      <div class="text-center">
+        <a
+          :href="`${file.url_s3}`"
+          class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
+          :class="{ 'pointer-events-none': downloaded }"
+          target="_blank"
+          @click="onFileDownload"
+          :disabled="downloaded"
+          >{{ $t('file.downloadFile') }}</a
+        >
+      </div>
+    </div>
+    <div v-else class="text-center">
+      <!-- Adblocker warning -->
+      <h1>
+        Please disable your AdBlocker to view the content.
+        請關閉AdBlocker以瀏覽下載鏈結
+      </h1>
+    </div>
+
+    <!-- <div class="text-center">
       <a
         :href="`${file.url_s3}`"
         class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
@@ -62,7 +83,7 @@
         :disabled="downloaded"
         >{{ $t('file.downloadFile') }}</a
       >
-    </div>
+    </div> -->
 
     <div class="mt-20" v-if="$i18n.locale === 'en'">
       <div class="mt-20 mb-20">
@@ -230,7 +251,7 @@ export default {
     file: null,
     title: '',
     downloaded: false,
-    adblockDetected: null,
+    noAdblocker: false,
   }),
   filters: {
     humanBytes(val) {
@@ -238,14 +259,16 @@ export default {
     },
   },
   mounted() {
-    window.adblockDetector.init({
-      debug: false,
+    // window.adblockDetector.init({
+    //   debug: false,
 
-      complete: (result) => {
-        console.log('Detection complete. Adblock?', result);
-        this.adblockDetected = result;
-      },
-    });
+    //   complete: (result) => {
+    //     console.log('Detection complete. Adblock?', result);
+    //     this.adblockDetected = result;
+    //   },
+    // });
+
+    this.noAdblocker = !!document.getElementById('rpjMdOwCJNxQ');
 
     axios
       .get(`/api/files/${this.$route.params.id}`)
