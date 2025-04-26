@@ -249,12 +249,12 @@ export default {
     },
   },
   mounted() {
-    setTimeout(() => {
-      const ad = document.querySelector('ins.adsbygoogle');
-      if (ad && ad.innerHTML.replace(/\s/g, '').length === 0) {
-        this.adblockDetected = true;
-      }
-    }, 1500);
+    // setTimeout(() => {
+    //   const ad = document.querySelector('ins.adsbygoogle');
+    //   if (ad && ad.innerHTML.replace(/\s/g, '').length === 0) {
+    //     this.adblockDetected = true;
+    //   }
+    // }, 1500);
 
     axios
       .get(`/api/files/${this.$route.params.id}`)
