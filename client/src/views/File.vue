@@ -52,16 +52,27 @@
       ></Adsense>
     </div>
 
-    <div class="text-center">
-      <a
-        :href="`${file.url_s3}`"
-        class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
-        :class="{ 'pointer-events-none': downloaded }"
-        target="_blank"
-        @click="onFileDownload"
-        :disabled="downloaded"
-        >{{ $t('file.downloadFile') }}</a
-      >
+    <div id="app" v-if="adblockDetected === false">
+      <!-- Your normal page content here -->
+      <div class="text-center">
+        <a
+          :href="`${file.url_s3}`"
+          class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
+          :class="{ 'pointer-events-none': downloaded }"
+          target="_blank"
+          @click="onFileDownload"
+          :disabled="downloaded"
+          >{{ $t('file.downloadFile') }}</a
+        >
+      </div>
+    </div>
+
+    <div v-else>
+      <!-- Adblocker warning -->
+      <h1>
+        Please disable your AdBlocker to view the content.
+        請關閉AdBlocker以瀏覽下載內容
+      </h1>
     </div>
 
     <div class="mt-20" v-if="$i18n.locale === 'en'">
@@ -230,6 +241,7 @@ export default {
     file: null,
     title: '',
     downloaded: false,
+    adblockDetected: null,
   }),
   filters: {
     humanBytes(val) {
@@ -237,6 +249,14 @@ export default {
     },
   },
   mounted() {
+    // Setup adblock detector
+    window.adblockDetector.init({
+      debug: false,
+      complete: (result) => {
+        this.adblockDetected = result;
+      },
+    });
+
     axios
       .get(`/api/files/${this.$route.params.id}`)
       .then(({ data: file }) => {
