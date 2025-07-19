@@ -8,7 +8,7 @@
         "size": "文件大小",
         "downloaded": "下载次数",
         "visited": "瀏览次数",
-        "downloadFile": "下载载点 {num}"
+        "downloadFile": "下载载点"
     },
     "upload-files": "上传文件",
     "upload": {

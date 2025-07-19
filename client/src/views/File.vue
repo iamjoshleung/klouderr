@@ -31,25 +31,49 @@
 
     <h1 class="title is-5 tracking-wide mt-12 text-center">{{ file.name }}</h1>
 
-    <div class="ads mt-4 text-center">
-      <Adsense
-        data-ad-client="ca-pub-4679085340013866"
-        data-ad-slot="9178412838"
-      ></Adsense>
-    </div>
+    <div v-if="countdownActive">
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="9178412838"
+        ></Adsense>
+      </div>
 
-    <div class="ads mt-4 text-center">
-      <Adsense
-        data-ad-client="ca-pub-4679085340013866"
-        data-ad-slot="6511749031"
-      ></Adsense>
-    </div>
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="6511749031"
+        ></Adsense>
+      </div>
 
-    <div class="ads mt-4 text-center">
-      <Adsense
-        data-ad-client="ca-pub-4679085340013866"
-        data-ad-slot="6511749031"
-      ></Adsense>
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="6511749031"
+        ></Adsense>
+      </div>
+    </div>
+    <div v-else>
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="9178412838"
+        ></Adsense>
+      </div>
+
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="6511749031"
+        ></Adsense>
+      </div>
+
+      <div class="ads mt-4 text-center">
+        <Adsense
+          data-ad-client="ca-pub-4679085340013866"
+          data-ad-slot="6511749031"
+        ></Adsense>
+      </div>
     </div>
 
     <div v-if="noAdblocker">
@@ -57,14 +81,15 @@
         <a
           :href="`${file.url_s3}`"
           class="button is-primary is-rounded mt-2 mb-2 mr-4 uppercase font-bold"
-          :class="{ 'pointer-events-none': downloaded }"
+          :class="{ 'pointer-events-none': downloaded || countdownActive }"
           target="_blank"
           @click="onFileDownload"
-          :disabled="downloaded"
-          >{{ $t('file.downloadFile') }}</a
+          :disabled="downloaded || countdownActive"
+          >{{ countdownActive ? `${$t('file.downloadFile')} (${countdown}s)` : $t('file.downloadFile') }}</a
         >
       </div>
     </div>
+
     <div v-else class="text-center">
       <!-- Adblocker warning -->
       <h1>
@@ -252,6 +277,8 @@ export default {
     title: '',
     downloaded: false,
     noAdblocker: false,
+    countdown: 5,
+    countdownActive: true,
   }),
   filters: {
     humanBytes(val) {
@@ -270,6 +297,9 @@ export default {
 
     this.noAdblocker = !!document.getElementById('rpjMdOwCJNxQ');
 
+    // Start countdown timer
+    this.startCountdown();
+
     axios
       .get(`/api/files/${this.$route.params.id}`)
       .then(({ data: file }) => {
@@ -283,7 +313,7 @@ export default {
         if (err.response.status === 500) {
           return EventBus.$emit(
             'error',
-            'Server Error: Unable to handle the request now. Please try again later.'
+            'Server Error: Unable to handle the request now. Please try again later.',
           );
         }
 
@@ -291,6 +321,15 @@ export default {
       });
   },
   methods: {
+    startCountdown() {
+      const timer = setInterval(() => {
+        this.countdown = this.countdown - 1;
+        if (this.countdown <= 0) {
+          this.countdownActive = false;
+          clearInterval(timer);
+        }
+      }, 1000);
+    },
     onFileDownload() {
       this.file.downloadCount += 1;
       this.downloaded = true;
