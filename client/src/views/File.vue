@@ -31,63 +31,32 @@
 
     <h1 class="title is-5 tracking-wide mt-12 text-center">{{ file.name }}</h1>
 
-    <div v-if="countdownActive">
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="9178412838"
-        ></Adsense>
-      </div>
-
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
-
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
-
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="9178412838"
+      ></Adsense>
     </div>
-    <div v-else>
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="9178412838"
-        ></Adsense>
-      </div>
 
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="6511749031"
+      ></Adsense>
+    </div>
 
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="6511749031"
+      ></Adsense>
+    </div>
 
-      <div class="ads mt-4 text-center">
-        <Adsense
-          data-ad-client="ca-pub-4679085340013866"
-          data-ad-slot="6511749031"
-        ></Adsense>
-      </div>
+    <div class="ads mt-4 text-center">
+      <Adsense
+        data-ad-client="ca-pub-4679085340013866"
+        data-ad-slot="6511749031"
+      ></Adsense>
     </div>
 
     <div v-if="noAdblocker">
@@ -103,7 +72,6 @@
         >
       </div>
     </div>
-
     <div v-else class="text-center">
       <!-- Adblocker warning -->
       <h1>
