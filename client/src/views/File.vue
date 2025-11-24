@@ -68,7 +68,11 @@
           target="_blank"
           @click="onFileDownload"
           :disabled="downloaded || countdownActive"
-          >{{ countdownActive ? `${$t('file.downloadFile')} (${countdown}s)` : $t('file.downloadFile') }}</a
+          >{{
+            countdownActive
+              ? `${$t('file.downloadFile')} (${countdown}s)`
+              : $t('file.downloadFile')
+          }}</a
         >
       </div>
     </div>
@@ -92,7 +96,7 @@
       >
     </div> -->
 
-    <div class="mt-20" v-if="$i18n.locale === 'en'">
+    <div class="mt-20">
       <div class="mt-20 mb-20">
         <h4 class="title title--no-sp is-6">
           How I Pick My Stocks: Investing For Beginners
@@ -295,7 +299,7 @@ export default {
         if (err.response.status === 500) {
           return EventBus.$emit(
             'error',
-            'Server Error: Unable to handle the request now. Please try again later.',
+            'Server Error: Unable to handle the request now. Please try again later.'
           );
         }
 
